@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/main.css">
+  <title>Formulário de Contato</title>
+</head>
+
+<body>
+  <main>
+    <div class="title">
+      <h2>Nos Contate</h2>
+    </div>
+    <form>
+      <div class="form-group input">
+        <div class="input-name">
+          <label for="firsName">Primeiro Nome <span>*</span></label>
+          <input type="text" name="firsName" id="firstName" class="firsName">
+          <p class="field-required">
+            Este campo é obrigatório
+          </p>
+        </div>
+        <div class="input-last-name">
+          <label for="lastName">Sobrenome <span>*</span></label>
+          <input type="text" name="lastName" id="lastName" class="lastName">
+          <p class="field-required">
+            Este campo é obrigatório
+          </p>
+        </div>
+      </div>
+
+      <div class="form-group input-email-info">
+        <div class="input-email">
+          <label for="email">Endereço de E-mail <span>*</span></label>
+          <input type="email" name="email" id="email" class="email">
+          <p class="field-required">
+            Por favor insira um endereço de e-mail válido
+          </p>
+        </div>
+      </div>
+      <div class="form-group radio">
+        <label for="query">Área de Atuação <span>*</span></label>
+        <div id="query">
+          <div class="query-type">
+            <input type="radio" id="option1" name="query-type" aria-required="true" />
+            <label for="option1">Front-End</label>
+          </div>
+          <div class="query-type">
+            <input type="radio" id="option1" name="query-type" aria-required="true" />
+            <label for="option1">Back-End</label>
+          </div>
+          <div class="query-type">
+            <input type="radio" id="option1" name="query-type" aria-required="true" />
+            <label for="option1">Full-Stack</label>
+          </div>
+        </div>
+        <p class="field-required">
+          Selecione uma área de atuação
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensagem <span>*</span></label>
+        <textarea name="message" id="message" rows="6" aria-required="true"></textarea>
+        <p class="field-required">
+          Este campo é obrigatório
+        </p>
+      </div>
+
+      <div class="form-group checkbox">
+        <div>
+          <input type="checkbox" id="consent" aria-required="true" />
+          <label for="consent">Eu autorizo ser contatado(a) pela equipe <span>*</span></label>
+        </div>
+        <p class="field-required">Para enviar esse formulário, por favor aceite ser contactado</p>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
